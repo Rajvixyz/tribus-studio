@@ -1,0 +1,5 @@
+name: 'Tribus Number Addition'
+type: module
+description: 'To demonstrate addition of two numbers.'
+core_version_requirement: ^9
+package: 'custom' 

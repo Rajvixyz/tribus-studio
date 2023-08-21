@@ -1,0 +1,17 @@
+input_numbers.settings:
+  path: '/admin/config/input-numbers/settings'
+  defaults:
+    _form: '\Drupal\tribus_number_addition\Form\InputNumberSettingsForm'
+    _title: 'Input Numbers'
+  requirements:
+    _permission: 'administer site configuration'
+
+tribus_number_addition.show_number_addition_text:
+  path: '/number-addition'
+  defaults:
+    _controller: '\Drupal\tribus_number_addition\Controller\NumberAdditionController::showFormattedString'
+    _title: 'Addition of Numbers'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'

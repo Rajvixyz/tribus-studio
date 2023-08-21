@@ -1,0 +1,6 @@
+input_numbers.admin:
+  title: 'Input Numbers settings'
+  description: 'Add input numbers for which need to do sum'
+  parent: system.admin_config_services
+  route_name: input_numbers.settings
+  weight: 100

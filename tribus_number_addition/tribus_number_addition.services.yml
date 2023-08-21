@@ -1,0 +1,8 @@
+services:
+  tribus_number_addition.adder:
+    class: Drupal\tribus_number_addition\Service\NumberAdderService
+    arguments: []
+
+  tribus_number_addition.string_formatter:
+    class: Drupal\tribus_number_addition\Service\StringFormatterService
+    arguments: ['@config.factory', '@tribus_number_addition.adder']

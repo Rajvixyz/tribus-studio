@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Tribus Number Addition module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function tribus_number_addition_theme($existing, $type, $theme, $path) {
+  return [
+    'numbers_sum_text' => [
+      'variables' => ['formatted_string' => NULL],
+    ],
+  ];
+}
